@@ -149,7 +149,7 @@ void saveToFile()
       //dataName= String.format("C:/work/_out/Data_%2d_%2d_%2d_%2d_%2d.txt", month(), day(), hour(), minute(), second()); 
       //dataName= String.format("C:/Users/seung/Dropbox/kimsc@disneyresearch.com/repos-out/_outFurniture/Data_%2d_%2d_%2d_%2d_%2d.txt", month(), day(), hour(), minute(), second());
       String path = sketchPath();
-      dataName= String.format("%s/out/Data_%d%02d%02d_%02d%02d%02d.txt", path, year(), month(), day(), hour(), minute(), second());
+      dataName= String.format("%s/../out/Data_%d%02d%02d_%02d%02d%02d.txt", path, year(), month(), day(), hour(), minute(), second());
       
     }
     
