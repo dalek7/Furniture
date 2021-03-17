@@ -148,7 +148,8 @@ void saveToFile()
     {
       //dataName= String.format("C:/work/_out/Data_%2d_%2d_%2d_%2d_%2d.txt", month(), day(), hour(), minute(), second()); 
       //dataName= String.format("C:/Users/seung/Dropbox/kimsc@disneyresearch.com/repos-out/_outFurniture/Data_%2d_%2d_%2d_%2d_%2d.txt", month(), day(), hour(), minute(), second());
-      dataName= String.format("C:/Users/seung/Dropbox/Projects/PCB/2020Nov/_outFurniture/Data_%2d_%2d_%2d_%2d_%2d.txt", month(), day(), hour(), minute(), second());
+      String path = sketchPath();
+      dataName= String.format("%s/out/Data_%d%02d%02d_%02d%02d%02d.txt", path, year(), month(), day(), hour(), minute(), second());
       
     }
     
@@ -251,56 +252,7 @@ void draw() {
           
         }
     }
-    /*
-  while (myPort.available() > 0) {
-    String str1  = myPort.readStringUntil(lf);
     
-    if (str1 != null) 
-    {
-      
-      
-      
-      
-      float num=float(str1);  // Converts and prints float
-      //println(num);
-      ShiftWithNewf(keep_val1, num);
-      background(255);  
-      fill(0);   
-      
-      String buf;
-      buf = String.format("Sensor : INMP401 (InvenSense)"); 
-      text(buf, 50,50);
-      buf = String.format("Current Value : %.2f", num); 
-      text(buf, 50,70);
-      
-      buf = String.format("https://github.com/dalek7/Undergrad-2017Fall-IoT/");
-      text(buf, 50,90);
-      
-      
-      int offset_x1 = 100;
-      int offset_y1 = 200;
-      float g = 10;
-      float gx = 2;
-      for(int i=0; i<nSample-1; i++)
-      {
-        int y1 = int(offset_y1 + g* keep_val1[i]) - 0;
-        int y2 = int(offset_y1 + g* keep_val1[i+1]) - 0;
-        line(offset_x1 + gx*i, y1, offset_x1 + gx*(i+1), y2);
-        
-      }
-      
-      
-      for(int i=0; i<50; i++)
-      {
-        String tmp1 = String.format("%.2f", keep_val1[i]);
-        text(tmp1, 20, 60+ 15*i);
-      }
-      
-      
-    }
- 
-  }
-  */
 }
 
 
