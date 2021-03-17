@@ -21,6 +21,6 @@ Furniture9250_Vis
 <img src='images/2021-03-17.png' width=500px/>
 
 
-<img src='images/untitled1.png' width=560px/>
+<img src='images/untitled1.png' width=500px/>
 
-<img src='images/untitled2.png' width=560px/>
+<img src='images/untitled2.png' width=500px/>
